@@ -621,7 +621,7 @@ section.why-us {
 /* Coming Soon */
 
 section.coming-soon {
-    background-image: url("fotogrupal.png");
+    background-image: url("../images/fotogrupal.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;

@@ -1,3 +1,4 @@
+import re
 from flask import Flask, request, render_template, url_for 
 
 app = Flask(__name__)
@@ -16,6 +17,9 @@ def bootcamp():
 def descargar_programa():
     return render_template('descargar_programa.html')
 
+@app.route('/variables')
+def variables():
+    return render_template('f1_variables.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8888', debug = True)

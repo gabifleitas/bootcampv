@@ -12,13 +12,14 @@
     <title>Grad School HTML5 Template</title>
     
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="
+    {{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/templatemo-grad-school.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/owl.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/lightbox.css')}}">
 <!--
     
 TemplateMo 557 Grad School
@@ -58,7 +59,8 @@ https://templatemo.com/tm-557-grad-school
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="assets/images/videogrupal.mp4" type="video/mp4" />
+          <source src="
+          {{url_for('static', filename='assets/images/videogrupal.mp4')}}" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -84,7 +86,7 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-lg-4 col-md-8">
            <div class="single-team text-center team-style-one">
               <div class="team-image">
-                 <img src="assets/images/fotos de perfil/fotodeperfilcostanza.png" alt="Costanza" />
+                 <img src="{{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilcostanza.png')}}" alt="Costanza" />
               </div>
               <div class="team-content">
                  <h4 class="name">Costanza Caligari</h4>
@@ -115,7 +117,7 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-lg-4 col-md-8">
            <div class="single-team text-center team-style-one">
               <div class="team-image">
-                 <img src="assets/images/fotos de perfil/fotodeperfiljoaquin.png" alt="Joaquín" />
+                 <img src="{{url_for('static', filename='assets/images/fotos de perfil/fotodeperfiljoaquin.png')}}" alt="Joaquín" />
               </div>
               <div class="team-content">
                  <h4 class="name">Joaquín Abente</h4>
@@ -146,7 +148,7 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-lg-4 col-md-8">
            <div class="single-team text-center team-style-one">
               <div class="team-image">
-                 <img src="assets/images/fotos de perfil/fotodeperfiljaz.png" alt="Team" />
+                 <img src="{{url_for('static', filename='assets/images/fotos de perfil/fotodeperfiljaz.png')}}" alt="Team" />
               </div>
               <div class="team-content">
                  <h4 class="name">Jazmín Sánchez</h4>
@@ -176,13 +178,14 @@ https://templatemo.com/tm-557-grad-school
           
   </section>
 <!--====== TEAM STYLE ONE ENDS ======-->
-<section class="team-area">
+  <section class="team-area">
   <div class="container">
      <div class="row">
         <div class="col-lg-4 col-md-8">
            <div class="single-team text-center team-style-one">
               <div class="team-image">
-                 <img src="assets/images/fotos de perfil/fotodeperfilaraceli.png" alt="Araceli" />
+                 <img src="
+                 {{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilaraceli.png')}}" alt="Araceli" />
               </div>
               <div class="team-content">
                  <h4 class="name">Araceli López</h4>
@@ -213,7 +216,8 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-lg-4 col-md-8">
            <div class="single-team text-center team-style-one">
               <div class="team-image">
-                 <img src="assets/images/fotos de perfil/fotodeperfilgabi.png" alt="Gabi" />
+                 <img src="
+                 {{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilgabi.png')}}" alt="Gabi" />
               </div>
               <div class="team-content">
                  <h4 class="name">Gabriela Fleitas</h4>
@@ -244,7 +248,8 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-lg-4 col-md-8">
            <div class="single-team text-center team-style-one">
               <div class="team-image">
-                 <img src="assets/images/fotos de perfil/fotodeperfilarami.png" alt="Arami" />
+                 <img src="
+                 {{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilarami.png')}}" alt="Arami" />
               </div>
               <div class="team-content">
                  <h4 class="name">Arami Giménez</h4>
@@ -272,6 +277,7 @@ https://templatemo.com/tm-557-grad-school
               </div>
            </div>
            </div>
+  </section>         
 <section class="team-area">
   <div class="section-heading">
     <h2>¿Qué hacemos?</h2>
@@ -359,15 +365,19 @@ https://templatemo.com/tm-557-grad-school
       <div class="section-heading">
       <h2>Elegí la clase que quieras tomar:</h2>
       </div>
-      </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <img src="assets/images/fotosclases/comodescargar.png" alt="Descargar programas">
+            <img src="{{url_for('static', filename='assets/images/fotosclases/comodescargar.png')}}" alt="Descargar programas">
             <div class="down-content">
               <h4>Cómo descargar programas</h4>
               <p>Te guiamos paso a paso desde el primer momento: la descarga de los programas que vamos a usar.</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfilaraceli.png" width="40" height="40" alt="Araceli">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-01.png')}}" alt="Author 1">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-pay">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
@@ -375,12 +385,18 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/fotosclases/variables.png.png" alt="Variables">
+            <img src="
+            {{url_for('static', filename='assets/images/fotosclases/variables.png')}}" alt="Variables">
             <div class="down-content">
               <h4>Fundamentos: 1. Variables</h4>
               <p>Iniciamos nuestro camino a la programación. En esta clase, damos lo principal para manejar los datos con los que vamos a trabajar, las variables</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfilarami.png" alt="Arami">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-02.png')}}" alt="Author 2">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-free">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
@@ -388,12 +404,18 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/fotosclases/operadores.png.png" alt="Operadores">
+            <img src="
+            {{url_for('static', filename='assets/images/fotosclases/operadores.png')}}" alt="Operadores">
             <div class="down-content">
               <h4>Fundamentos: 2. Operadores</h4>
               <p>Luego de aprender lo básico sobre variables, en esta clase aprenderemos cómo operarlas y qué tipo de operaciones podemos realizar con ellas.</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfilcostanza.png" alt="Costanza">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-03.png')}}" alt="Author 3">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-pay">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
@@ -401,12 +423,18 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/fotosclases/funciones.png.png" alt="Funciones">
+            <img src="
+            {{url_for('static', filename='assets/images/fotosclases/funciones.png')}}" alt="Funciones">
             <div class="down-content">
               <h4>Fundamentos: 3. Funciones</h4>
               <p>Las funciones son bloques de código que realiza una serie de tareas y devuelve un valor. En esta clase aprenderemos cómo definirlas y utilizarlas.</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfilgabi.png" alt="Gabi">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-04.png')}}" alt="Author 4">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-free">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
@@ -414,12 +442,17 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/fotosclases/listas.png.png" alt="Listas">
+            <img src="{{url_for('static', filename='assets/images/fotosclases/listas.png')}}" alt="Listas">
             <div class="down-content">
               <h4>Fundamentos: 4. Listas</h4>
               <p>Lo especial de las listas es que podemos almacenar cualquier tipo de valor en ellas. En esta clase, vamos a aprender sobre su importancia y cómo utilizarlas.</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfiljaz.png" alt="Jaz">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-05.png')}}" alt="">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-pay">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
@@ -427,12 +460,18 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/fotosclases/ciclos.png.png" alt="Ciclos">
+            <img src="
+            {{url_for('static', filename='assets/images/fotosclases/ciclos.png')}}" alt="Ciclos">
             <div class="down-content">
               <h4>Fundamentos: 5. Ciclos o loops</h4>
               <p>En esta clase, aprenderemos sobre los ciclos o bucles, que son elementos que nos permiten ejecutar bloques de código.</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfiljoaquin.png" alt="Joaquín">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-01.png')}}" alt="">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-free">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
@@ -440,19 +479,29 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/fotosclases/condicionales.png.png" alt="Condicionales">
+            <img src="
+            {{url_for('static', filename='assets/images/fotosclases/condicionales.png')}}" alt="Condicionales">
             <div class="down-content">
               <h4>Fundamentos: 6. Condicionales</h4>
               <p>En la última clase, aprenderemos sobre las condicionales. Esto nos permitirá hacer que nuestro programa ejecute ciertas instrucciones cuando se cumplan las condiciones que les damos.</p>
               <div class="author-image">
+<<<<<<< HEAD
                 <img src="assets/images/fotos de perfil/fotodeperfilaraceli.png" alt="Araceli">
+=======
+                <img src="
+                {{url_for('static', filename='assets/images/author-02.png')}}" alt="">
+>>>>>>> e2b5f39dd7d0d6437a9716861983764f6a727ec0
               </div>
               <div class="text-button-free">
                 <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
               </div>
             </div>
-          </div>
-          
+
+  </div>       
+</div>
+</div>
+</div>
+</div>
   </section>
 
   <section class="section contact" data-section="section6">
@@ -517,16 +566,16 @@ https://templatemo.com/tm-557-grad-school
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{url_for('static', filename='assets/js/isotope.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/lightbox.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/tabs.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/video.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/slick-slider.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/custom.js')}}"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');

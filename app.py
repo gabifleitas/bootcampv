@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, url_for 
 
 app = Flask(__name__)
 
@@ -11,6 +11,11 @@ def home():
 @app.route('/bcampvirtual') #crear la ruta para el bootcamp virtual
 def bootcamp():
     return render_template('index.html')
+
+@app.route('/descargar_programa')
+def descargar_programa():
+    return render_template('descargar_programa.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8888', debug = True)

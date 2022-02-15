@@ -12,5 +12,10 @@ def home():
 def bootcamp():
     return render_template('index.html')
 
+@app.route('/descargar_programa')
+def descargar_programa():
+    return render_template('descargar_programa.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8888', debug = True)

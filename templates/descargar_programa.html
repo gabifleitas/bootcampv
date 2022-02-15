@@ -12,13 +12,14 @@
     <title>Grad School HTML5 Template</title>
     
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="
+    {{url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/templatemo-grad-school.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/owl.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='assets/css/lightbox.css')}}">
 <!--
     
 TemplateMo 557 Grad School
@@ -26,7 +27,7 @@ TemplateMo 557 Grad School
 https://templatemo.com/tm-557-grad-school
 
 -->
-  
+  </head>
   <section class="section video" data-section="section5">
     <div class="container">
       <div class="row">
@@ -45,12 +46,25 @@ https://templatemo.com/tm-557-grad-school
               <h4>Power HTML Template</h4>
             </div>
             <figure>
-              <a href="https://www.youtube.com/watch?v=m5i-Pq-z9w8"class="play"><img src="assets/images/descargar_python.png"></a>
+              <a href="https://www.youtube.com/watch?v=m5i-Pq-z9w8"class="play"><img src="
+                {{url_for('static', filename='assets/images/descargar_python.png')}}"></a>
             </figure>
           </article>
         </div>
       </div>
     </div>
   </section>
+   <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <script src="{{url_for('static', filename='assets/js/isotope.min.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/js/lightbox.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/js/tabs.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/js/video.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/js/slick-slider.js')}}"></script>
+  <script src="{{url_for('static', filename='assets/js/custom.js')}}"></script>
 
 </html>

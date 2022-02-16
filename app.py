@@ -24,11 +24,11 @@ def variables():
 
 @app.route('/operadores')
 def operadores():
-    return render_template('operadores')
+    return render_template('operadores.html')
 
 @app.route('/funciones')
 def funciones():
-    return render_template('funciones')
+    return render_template('funciones.html')
 
 
 if __name__ == '__main__':

@@ -22,11 +22,11 @@ def descargar_programa():
 def variables():
     return render_template('f1_variables.html')
 
-@app.route('operadores')
+@app.route('/operadores')
 def operadores():
     return render_template('operadores')
 
-@app.route('funciones')
+@app.route('/funciones')
 def funciones():
     return render_template('funciones')
 

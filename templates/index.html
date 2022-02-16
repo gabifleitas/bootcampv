@@ -59,8 +59,7 @@ https://templatemo.com/tm-557-grad-school
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="
-          {{url_for('static', filename='assets/images/videogrupal.mp4')}}" type="video/mp4" />
+          <source src="{{url_for('static', filename='assets/images/videogrupal.mp4')}}" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -80,7 +79,7 @@ https://templatemo.com/tm-557-grad-school
   <div class="section-heading">
     <h2>¿Quiénes somos?</h2>
   </div>
-  <pr style="color: white; padding-left: 50px; padding-right: 50px;">Somos un grupo de personas que participó de bootcamps de Penguin Academy.<br> Nos dimos cuenta de que el principal obstáculo a la hora de aprender a programar, no es la falta de recursos, sino el miedo a la tecnología.  <br> <br>La programación parece intimidante, sin embargo, creemos que tener contacto con personas en tu misma situación (es decir, completos novatos)<br> podría ayudarte a perderle el miedo y animarte a aprender habilidades que te van a cambiar la vida.  <br> <br></pr>
+  <pr style="color: white; padding-left: 50px; padding-right: 50px;">Somos un grupo de personas que participó en los bootcamps de Penguin Academy.<br> Nos dimos cuenta de que el principal obstáculo a la hora de aprender a programar, no es siempre la falta de recursos, sino el miedo a la tecnología.  <br> <br>La programación parece intimidante, sin embargo, creemos que tener contacto con personas en tu misma situación (es decir, completos novatos)<br> podría ayudarte a perderle el miedo y animarte a aprender habilidades que te van a cambiar la vida.  <br> <br></pr>
   <div class="container">
      <div class="row">
         <div class="col-lg-4 col-md-8">
@@ -293,7 +292,8 @@ https://templatemo.com/tm-557-grad-school
             <div>
               <h4>¡Crea una cuenta en Penguin Alumni!<em>
               Así podes participar en nuestro foro y guardar tu progreso</em>
-              <h5>Apurate, faltan tantos días para el siguiente bootcamp:</h5> </h4>
+              <br>
+              <h5>Apurate, solo faltan estos días para el siguiente bootcamp:</h5> </h4>
               
               <div class="counter">
 
@@ -382,10 +382,10 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <a href="{{url_for('descargar_programa')}}"><img src="{{url_for('static', filename='assets/images/fotosclases/variables.png')}}" alt="Variables"></a>
+            <a href="{{url_for('variables')}}"><img src="{{url_for('static', filename='assets/images/fotosclases/variables.png')}}" alt="Variables"></a>
             <div class="down-content">
-              <a href="{{url_for('descargar_programa')}}"><h4>Fundamentos: 1. Variables</h4></a>
-              <p>Iniciamos nuestro camino a la programación. En esta clase, damos lo principal para manejar los datos con los que vamos a trabajar, las variables</p>
+              <a href="{{url_for('variables')}}"><h4>Fundamentos: 1. Variables</h4></a>
+              <p>Iniciamos nuestro camino a la programación. En esta clase, daremos lo principal para manejar los datos con los que vamos a trabajar, las variables.</p>
               <div class="author-image">
                 <img src="{{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilarami.png')}}" alt="Arami">
               </div>
@@ -413,7 +413,7 @@ https://templatemo.com/tm-557-grad-school
             {{url_for('static', filename='assets/images/fotosclases/funciones.png')}}" alt="Funciones">
             <div class="down-content">
               <h4>Fundamentos: 3. Funciones</h4>
-              <p>Las funciones son bloques de código que realiza una serie de tareas y devuelve un valor. En esta clase aprenderemos cómo definirlas y utilizarlas.</p>
+              <p>Las funciones son bloques de código que realizan una serie de tareas y devuelven un valor. En esta clase aprenderemos cómo definirlas y utilizarlas.</p>
               <div class="author-image">
                 <img src="{{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilgabi.png')}}" alt="Gabi">
 

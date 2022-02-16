@@ -18,7 +18,7 @@ def descargar_programa():
 
 @app.route('/variables')
 def variables():
-    return render_template('f1_variables.html')
+    return render_template('variables.html')
 
 @app.route('/operadores')
 def operadores():

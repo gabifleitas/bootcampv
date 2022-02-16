@@ -19,9 +19,9 @@
 	    loop:true,
 	    margin:30,
 	    nav:true,
-	    autoplay:true,
+	    autoplay:false,
 		autoplayTimeout:5000,
-		autoplayHoverPause:true,
+		autoplayHoverPause:false,
 	    responsive:{
 	        0:{
 	            items:1
@@ -43,9 +43,6 @@
 
 
 	$(".Modern-Slider").slick({
-	    autoplay:true,
-	    autoplaySpeed:10000,
-	    speed:600,
 	    slidesToShow:1,
 	    slidesToScroll:1,
 	    pauseOnHover:false,
@@ -53,7 +50,7 @@
 	    pauseOnDotsHover:true,
 	    cssEase:'fade',
 	   // fade:true,
-	    draggable:false,
+	    draggable:true,
 	    prevArrow:'<button class="PrevArrow"></button>',
 	    nextArrow:'<button class="NextArrow"></button>', 
 	});
@@ -100,7 +97,7 @@
 	    }
 	  },1000);
 	}
-	initializeClock(((new Date()).getFullYear()+1) + "/1/1")
+	initializeClock(((new Date()).getFullYear()) + "/3/5")
 	})()
 
 })(jQuery);

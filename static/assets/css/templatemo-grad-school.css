@@ -621,7 +621,7 @@ section.why-us {
 /* Coming Soon */
 
 section.coming-soon {
-    background-image: url(../images/coming-soon-bg.jpg);
+    background-image: url("../images/fotogrupal.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -639,6 +639,15 @@ section.coming-soon .continer h4 {
     letter-spacing: 0.5px;
     line-height: 40px;
     margin-bottom: 50px;
+}
+section.coming-soon .continer h5 {
+  margin-top: 100px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+  margin-bottom: 50px;
 }
 section.coming-soon .continer h4 em {
     font-style: normal;

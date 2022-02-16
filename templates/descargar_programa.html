@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Grad School HTML5 Template</title>
+    <title>Penguin Alumni - Pre Bootcamps</title>
     
     <!-- Bootstrap core CSS -->
     <link href="
@@ -28,7 +28,37 @@ https://templatemo.com/tm-557-grad-school
 
 -->
   </head>
-  <section class="section video" data-section="section5">
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>PENGUIN</em> ALUMNI</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Inicio</a></li>
+        <li class="has-submenu"><a href="#section7">Quiénes somos</a>
+          <ul class="sub-menu">
+            <li><a href="#section7">¿Quiénes somos?</a></li>
+            <li><a href="#section8">¿Qué hacemos?</a></li>
+            <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
+          </ul>
+        </li>
+        <li><a href="#section4">Clases</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contacto</a></li>
+        <li><a href="https://penguin.academy/dl/Bootcamp/s/783bbb" class="external">Seguir aprendiendo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <!-- ***** Main Banner Area End ***** -->
+  <section class="section video" data-section="section5"><BR>
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center">
@@ -54,17 +84,79 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </div>
   </section>
-   <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2022 by Penguin Alumni  
+          
+           | Codigo Fuente: <a href="https://github.com/gabifleitas/bootcampv" rel="sponsored" target="_parent">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-  <script src="{{url_for('static', filename='assets/js/isotope.min.js')}}"></script>
-  <script src="{{url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
-  <script src="{{url_for('static', filename='assets/js/lightbox.js')}}"></script>
-  <script src="{{url_for('static', filename='assets/js/tabs.js')}}"></script>
-  <script src="{{url_for('static', filename='assets/js/video.js')}}"></script>
-  <script src="{{url_for('static', filename='assets/js/slick-slider.js')}}"></script>
-  <script src="{{url_for('static', filename='assets/js/custom.js')}}"></script>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+    <script src="{{url_for('static', filename='assets/js/isotope.min.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/owl-carousel.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/lightbox.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/tabs.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/video.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/slick-slider.js')}}"></script>
+    <script src="{{url_for('static', filename='assets/js/custom.js')}}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
 
 </html>

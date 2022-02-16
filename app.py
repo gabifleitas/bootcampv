@@ -1,6 +1,6 @@
 import re
 from flask import Flask, request, render_template, url_for
-from pyrsistent import T 
+from pyrsistent import 
 
 app = Flask(__name__)
 

@@ -11,7 +11,7 @@ def home():
 
 @app.route('/bcampvirtual') #crear la ruta para el bootcamp virtual
 def bootcamp():
-    return render_template('index.html')
+    return render_template('index_original.html')
 
 @app.route('/descargar_programa')
 def descargar_programa():

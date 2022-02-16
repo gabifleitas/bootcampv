@@ -24,6 +24,18 @@ def variables():
 def operadores():
     return render_template('operadores.html')
 
+@app.route('/listas')
+def listas():
+    return render_template('listas.html')
+
+@app.route('/condicionales')
+def condicionales():
+    return render_template('condicionales.html')
+
+@app.route('/ciclos')
+def ciclos():
+    return render_template('ciclos.html')    
+
 @app.route('/funciones')
 def funciones():
     return render_template('funciones.html')

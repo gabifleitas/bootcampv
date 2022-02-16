@@ -1,5 +1,6 @@
 import re
-from flask import Flask, request, render_template, url_for 
+from flask import Flask, request, render_template, url_for
+from pyrsistent import T 
 
 app = Flask(__name__)
 
@@ -20,6 +21,15 @@ def descargar_programa():
 @app.route('/variables')
 def variables():
     return render_template('f1_variables.html')
+
+@app.route('operadores')
+def operadores():
+    return render_template('operadores')
+
+@app.route('funciones')
+def funciones():
+    return render_template('funciones')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8888', debug = True)

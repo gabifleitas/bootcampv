@@ -365,9 +365,11 @@ https://templatemo.com/tm-557-grad-school
       </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
+            <a href="{{url_for('descargar_programa')}}">
             <img src="{{url_for('static', filename='assets/images/fotosclases/comodescargar.png')}}" alt="Descargar programas">
+            </a>
             <div class="down-content">
-              <h4>Cómo descargar programas</h4>
+              <a href="{{url_for('descargar_programa')}}"><h4>Cómo descargar programas</h4></a>
               <p>Te guiamos paso a paso desde el primer momento: la descarga de los programas que vamos a usar.</p>
               <div class="author-image">
                 <img src="
@@ -375,21 +377,20 @@ https://templatemo.com/tm-557-grad-school
 
               </div>
               <div class="text-button-pay">
-                <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
+                <a href="{{url_for('descargar_programa')}}">Tomar clase <i class="fa fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="
-            {{url_for('static', filename='assets/images/fotosclases/variables.png')}}" alt="Variables">
+            <a href="{{url_for('descargar_programa')}}"><img src="{{url_for('static', filename='assets/images/fotosclases/variables.png')}}" alt="Variables"></a>
             <div class="down-content">
-              <h4>Fundamentos: 1. Variables</h4>
+              <a href="{{url_for('descargar_programa')}}"><h4>Fundamentos: 1. Variables</h4></a>
               <p>Iniciamos nuestro camino a la programación. En esta clase, damos lo principal para manejar los datos con los que vamos a trabajar, las variables</p>
               <div class="author-image">
                 <img src="{{url_for('static', filename='assets/images/fotos de perfil/fotodeperfilarami.png')}}" alt="Arami">
               </div>
               <div class="text-button-free">
-                <a href="#">Tomar clase <i class="fa fa-angle-double-right"></i></a>
+                <a href="{{url_for('variables')}}">Tomar clase <i class="fa fa-angle-double-right"></i></a>
               </div>
             </div>
           </div>
